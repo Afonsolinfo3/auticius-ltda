@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #0B0B0C;
+  --color-bg-alt: #131315;
+  --color-fg: #EDEBE6;
+  --color-muted: #8C8A85;
+  --color-line: #2A2A2C;
+  --color-accent: #B08D57;
+
+  --font-display: "Big Shoulders Display", sans-serif;
+  --font-body: "Inter", sans-serif;
+}
+
+:root {
+  --column-opacity: 0.06;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background-color: #0B0B0C;
+  color: #EDEBE6;
+}
+
+.blueprint-grid {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image: repeating-linear-gradient(
+    90deg,
+    rgba(237, 235, 230, var(--column-opacity)) 0px,
+    rgba(237, 235, 230, var(--column-opacity)) 1px,
+    transparent 1px,
+    transparent 96px
+  );
+}
+
+.sheet-label {
+  font-family: var(--font-inter);
+  font-size: 11px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: #8C8A85;
+}
+
+.hairline { border-color: #2A2A2C; }
+
+:focus-visible {
+  outline: 2px solid #B08D57;
+  outline-offset: 3px;
+}
+
+input, textarea, select {
+  background-color: #131315;
+  border: 1px solid #2A2A2C;
+  color: #EDEBE6;
+}
+input::placeholder, textarea::placeholder {
+  color: #6b6864;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
