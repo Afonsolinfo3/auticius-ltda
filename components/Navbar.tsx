@@ -7,6 +7,7 @@ const links = [
   { href: "/projetos", label: "Projetos" },
   { href: "/admissao", label: "Trabalhe Conosco" },
   { href: "/contato", label: "Contato" },
+  { href: "/ingressos", label: "Ingressos" },
 ];
 
 export default function Navbar() {
