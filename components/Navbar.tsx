@@ -2,6 +2,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
+import VerifiedBadge from "@/components/VerifiedBadge";
 
 const links = [
   { href: "/sobre", label: "Sobre" },
@@ -9,7 +10,6 @@ const links = [
   { href: "/projetos", label: "Projetos" },
   { href: "/admissao", label: "Trabalhe Conosco" },
   { href: "/contato", label: "Contato" },
-  // { href: "/ingressos", label: "Ingressos" },
 ];
 
 export default function Navbar() {
@@ -21,7 +21,10 @@ export default function Navbar() {
         <div className="flex h-20 items-center justify-between">
           <Link href="/" className="flex items-center gap-3">
             <Image src="/logo.png" alt="Auticius" width={32} height={32} className="h-8 w-auto" />
-            <span className="font-display text-2xl tracking-wide font-bold">AUTICIUS</span>
+            <span className="font-display text-2xl tracking-wide font-bold flex items-center gap-1.5">
+              AUTICIUS
+              <VerifiedBadge className="h-4 w-4 text-accent shrink-0" />
+            </span>
           </Link>
 
           <nav className="hidden md:flex items-center gap-10">

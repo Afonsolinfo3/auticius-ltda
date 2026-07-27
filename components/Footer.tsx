@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import VerifiedBadge from "@/components/VerifiedBadge";
 
 export default function Footer() {
   return (
@@ -8,7 +9,10 @@ export default function Footer() {
         <div>
           <div className="flex items-center gap-3">
             <Image src="/logo.png" alt="Auticius" width={28} height={28} className="h-7 w-auto" />
-            <span className="font-display text-xl tracking-wide">AUTICIUS</span>
+            <span className="font-display text-xl tracking-wide flex items-center gap-1.5">
+              AUTICIUS
+              <VerifiedBadge className="h-3.5 w-3.5 text-accent shrink-0" />
+            </span>
           </div>
           <p className="mt-3 text-sm text-muted max-w-xs">
             Desenvolvimento de sites e aplicativos, marketing digital e Estruturação de empresas.

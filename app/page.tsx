@@ -13,8 +13,8 @@ const services = [
   },
   {
     n: "03",
-    title: "Eventos",
-    desc: "Organização de eventos privados de tecnologia — de meetups fechados a lançamentos de produto.",
+    title: "Estruturação",
+    desc: "Organização e estratégia para sua empresa — com foco em crescer no mercado.",
   },
 ];
 
