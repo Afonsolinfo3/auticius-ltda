@@ -2,7 +2,7 @@
 import { useRef } from "react";
 
 const projects = [
-  { title: "Startup A", tag: "Startup Structure", desc: "Descreva aqui a startup real — segmento, escopo do projeto e resultado." },
+  { title: "Quadra Livre", tag: "NEW! NEW! NEW!", desc: "O quadra livre — é um aplicativo onde você faz amizade enquanto joga. Descubra quadras, campos e muitos outros espaços para você e seus parceiros jogarem! Descubra em breve do seu potencial.." },
   { title: "Marca B", tag: "Branding & Positioning", desc: "Descreva aqui o projeto real de marca — cliente, entregas e resultado." },
   { title: "Iniciativa C", tag: "Project Innovation", desc: "Descreva aqui o projeto de inovação real — cliente, escopo e resultado." },
   { title: "Startup D", tag: "Startup Structure · Em andamento", desc: "Descreva aqui um projeto em desenvolvimento no momento." },
