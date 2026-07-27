@@ -46,7 +46,7 @@ export default function Projetos() {
       </div>
 
       <p className="mt-6 text-sm text-muted">
-        * Substitua os itens acima pelos projetos e startups reais com os quais a Auticius trabalhou.
+        * Todos os projetos acima são reais e de total propriedade de Auticius LTDA™
       </p>
     </div>
   );
