@@ -1,21 +1,9 @@
 import Link from "next/link";
 
 const services = [
-  {
-    n: "01",
-    title: "Desenvolvimento",
-    desc: "Sites institucionais, landing pages e aplicativos web e mobile, construídos sob medida — do wireframe ao deploy.",
-  },
-  {
-    n: "02",
-    title: "Marketing",
-    desc: "Estratégia digital, performance e posicionamento de marca para empresas que querem crescer com estrutura.",
-  },
-  {
-    n: "03",
-    title: "Eventos",
-    desc: "Organização de eventos privados de tecnologia — de meetups fechados a lançamentos de produto.",
-  },
+  { n: "01", title: "Startup Structure", desc: "Da ideia ao projeto estruturado — pronto para investidores, parceiros e clientes." },
+  { n: "02", title: "Branding & Positioning", desc: "Identidade, posicionamento e presença de marca com acompanhamento estratégico." },
+  { n: "03", title: "Project Innovation", desc: "Novos projetos, eventos e iniciativas de inovação para marcas já consolidadas." },
 ];
 
 export default function Home() {
@@ -24,17 +12,17 @@ export default function Home() {
       <section className="relative overflow-hidden border-b hairline">
         <div className="blueprint-grid" />
         <div className="mx-auto max-w-6xl px-6 py-32 md:py-44 relative">
-          <span className="sheet-label">AUTICIUS LTDA / SEDE DIGITAL</span>
+          <span className="sheet-label">AUTICIUS LTDA / DESENVOLVIMENTO DE STARTUPS</span>
           <h1 className="font-display text-6xl md:text-8xl leading-[0.95] mt-6 max-w-4xl">
-            CONSTRUÍMOS A ESTRUTURA DIGITAL DO SEU NEGÓCIO.
+            DAMOS ESTRUTURA A IDEIAS QUE QUEREM VIRAR NEGÓCIO.
           </h1>
           <p className="mt-8 max-w-xl text-muted text-lg">
-            Desenvolvimento, marketing e eventos de tecnologia — tudo o que uma empresa
-            precisa pra sair do papel e ganhar presença real.
+            Focamos no desenvolvimento de startups — e apoiamos negócios em geral com marketing
+            digital, estratégia e posicionamento de marca para crescer com estrutura.
           </p>
           <div className="mt-10 flex flex-wrap gap-4">
-            <Link href="/projetos" className="border border-accent text-accent px-6 py-3 sheet-label hover:bg-accent hover:text-bg transition-colors">
-              Ver projetos
+            <Link href="/servicos" className="border border-accent text-accent px-6 py-3 sheet-label hover:bg-accent hover:text-bg transition-colors">
+              Ver serviços
             </Link>
             <Link href="/contato" className="border hairline px-6 py-3 sheet-label hover:text-fg text-muted transition-colors">
               Falar com a equipe

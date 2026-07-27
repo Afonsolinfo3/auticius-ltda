@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 
 const links = [
@@ -12,13 +13,16 @@ const links = [
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+
   return (
     <header className="sticky top-0 z-50 border-b hairline bg-bg/90 backdrop-blur">
       <div className="mx-auto max-w-6xl px-6">
         <div className="flex h-20 items-center justify-between">
-          <Link href="/" className="font-display text-2xl tracking-wide font-bold">
-            AUTICIUS
+          <Link href="/" className="flex items-center gap-3">
+            <Image src="/logo.png" alt="Auticius" width={32} height={32} className="h-8 w-auto" />
+            <span className="font-display text-2xl tracking-wide font-bold">AUTICIUS</span>
           </Link>
+
           <nav className="hidden md:flex items-center gap-10">
             {links.map((l) => (
               <Link key={l.href} href={l.href} className="sheet-label hover:text-fg transition-colors">
@@ -26,11 +30,13 @@ export default function Navbar() {
               </Link>
             ))}
           </nav>
+
           <button className="md:hidden sheet-label" onClick={() => setOpen(!open)} aria-expanded={open} aria-label="Abrir menu">
             {open ? "FECHAR" : "MENU"}
           </button>
         </div>
       </div>
+
       {open && (
         <nav className="md:hidden border-t hairline">
           <div className="mx-auto max-w-6xl px-6 py-6 flex flex-col gap-5">

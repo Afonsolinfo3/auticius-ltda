@@ -1,21 +1,43 @@
+"use client";
+import { useRef } from "react";
+
 const projects = [
-  { title: "Projeto Institucional A", tag: "Web · Concluído", desc: "Descreva aqui o projeto real — cliente, escopo e resultado." },
-  { title: "App Mobile B", tag: "App · Concluído", desc: "Descreva aqui o projeto real — cliente, escopo e resultado." },
-  { title: "Campanha de Lançamento C", tag: "Marketing · Concluído", desc: "Descreva aqui o projeto real — cliente, escopo e resultado." },
-  { title: "Evento Tech Privado D", tag: "Evento · Em planejamento", desc: "Descreva aqui o projeto futuro — formato, tema e data prevista." },
+  { title: "Startup A", tag: "Startup Structure", desc: "Descreva aqui a startup real — segmento, escopo do projeto e resultado." },
+  { title: "Marca B", tag: "Branding & Positioning", desc: "Descreva aqui o projeto real de marca — cliente, entregas e resultado." },
+  { title: "Iniciativa C", tag: "Project Innovation", desc: "Descreva aqui o projeto de inovação real — cliente, escopo e resultado." },
+  { title: "Startup D", tag: "Startup Structure · Em andamento", desc: "Descreva aqui um projeto em desenvolvimento no momento." },
 ];
 
 export default function Projetos() {
+  const scrollRef = useRef<HTMLDivElement>(null);
+
+  function scroll(dir: "left" | "right") {
+    scrollRef.current?.scrollBy({ left: dir === "left" ? -380 : 380, behavior: "smooth" });
+  }
+
   return (
     <div className="mx-auto max-w-6xl px-6 py-24">
       <span className="sheet-label">AUTICIUS / PROJETOS</span>
-      <h1 className="font-display text-5xl md:text-6xl mt-4 max-w-2xl">
-        O que já construímos e o que está por vir.
-      </h1>
+      <div className="flex items-end justify-between mt-4 flex-wrap gap-4">
+        <h1 className="font-display text-5xl md:text-6xl max-w-2xl">
+          Startups e negócios que já estruturamos.
+        </h1>
+        <div className="flex gap-2">
+          <button onClick={() => scroll("left")} aria-label="Anterior" className="border hairline px-4 py-2 sheet-label hover:text-fg text-muted transition-colors">
+            ←
+          </button>
+          <button onClick={() => scroll("right")} aria-label="Próximo" className="border hairline px-4 py-2 sheet-label hover:text-fg text-muted transition-colors">
+            →
+          </button>
+        </div>
+      </div>
 
-      <div className="mt-16 grid md:grid-cols-2 gap-px bg-line">
+      <div
+        ref={scrollRef}
+        className="mt-12 flex gap-6 overflow-x-auto pb-6 snap-x snap-mandatory scroll-smooth [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+      >
         {projects.map((p) => (
-          <div key={p.title} className="bg-bg p-8">
+          <div key={p.title} className="snap-start shrink-0 w-[320px] md:w-[380px] border hairline p-8">
             <span className="sheet-label text-accent">{p.tag}</span>
             <h3 className="font-display text-2xl mt-3">{p.title}</h3>
             <p className="mt-3 text-sm text-muted leading-relaxed">{p.desc}</p>
@@ -23,8 +45,8 @@ export default function Projetos() {
         ))}
       </div>
 
-      <p className="mt-10 text-sm text-muted">
-        * Substitua os itens acima pelos projetos reais da Auticius (nome, cliente, link e imagem).
+      <p className="mt-6 text-sm text-muted">
+        * Substitua os itens acima pelos projetos e startups reais com os quais a Auticius trabalhou.
       </p>
     </div>
   );

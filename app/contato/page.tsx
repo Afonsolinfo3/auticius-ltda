@@ -35,6 +35,15 @@ export default function Contato() {
           <div><span className="sheet-label">E-mail</span><p className="mt-1">auticiusltdaa@gmail.com</p></div>
           <div><span className="sheet-label">Telefone</span><p className="mt-1">+55 (11) 95420-1237</p></div>
         </div>
+
+        <div className="mt-8">
+          <span className="sheet-label">Redes sociais</span>
+          <ul className="mt-2 space-y-1 text-sm">
+            <li><a href="https://instagram.com/auticius" target="_blank" rel="noopener noreferrer" className="text-muted hover:text-fg">Instagram →</a></li>
+            <li><a href="https://linkedin.com/company/auticius" target="_blank" rel="noopener noreferrer" className="text-muted hover:text-fg">LinkedIn →</a></li>
+            <li><a href="https://wa.me/5511954201237" target="_blank" rel="noopener noreferrer" className="text-muted hover:text-fg">WhatsApp →</a></li>
+          </ul>
+        </div>
       </div>
 
       <form onSubmit={handleSubmit} className="grid gap-6">
