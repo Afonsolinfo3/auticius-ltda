@@ -4,9 +4,9 @@ import Footer from "@/components/Footer";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Auticius | Desenvolvimento, Marketing e Eventos de Tecnologia",
+  title: "Auticius | Desenvolvimento, Marketing e Estruturação de empresas.",
   description:
-    "Auticius LTDA — desenvolvimento de sites e aplicativos, marketing digital e organização de eventos privados de tecnologia.",
+    "Auticius LTDA — desenvolvimento de sites e aplicativos, marketing digital e Estruturação de empresas.",
 };
 
 export default function RootLayout({

@@ -11,7 +11,7 @@ export default function Footer() {
             <span className="font-display text-xl tracking-wide">AUTICIUS</span>
           </div>
           <p className="mt-3 text-sm text-muted max-w-xs">
-            Desenvolvimento de sites e aplicativos, marketing digital e organização de eventos privados de tecnologia.
+            Desenvolvimento de sites e aplicativos, marketing digital e Estruturação de empresas.
           </p>
         </div>
 

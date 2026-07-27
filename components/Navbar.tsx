@@ -5,10 +5,11 @@ import { useState } from "react";
 
 const links = [
   { href: "/sobre", label: "Sobre" },
+  { href: "/servicos", label: "Serviços" },
   { href: "/projetos", label: "Projetos" },
   { href: "/admissao", label: "Trabalhe Conosco" },
   { href: "/contato", label: "Contato" },
-  { href: "/ingressos", label: "Ingressos" },
+  // { href: "/ingressos", label: "Ingressos" },
 ];
 
 export default function Navbar() {
