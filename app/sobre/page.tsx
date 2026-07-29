@@ -20,10 +20,19 @@ export default function Sobre() {
         Estruturamos ideias, marcas e negócios para crescerem de verdade.
       </h1>
       <p className="mt-8 max-w-2xl text-muted leading-relaxed">
-        A Auticius é uma empresa especializada no desenvolvimento de startups,
-        inovação e consultoria estratégica para negócios em diferentes estágios de maturidade.
-        Sua missão é transformar ideias em projetos estruturados, oferecendo orientação técnica e estratégica para empreendedores que estão iniciando sua jornada
+        A Auticius é uma empresa especializada no desenvolvimento de startups, inovação e consultoria estratégica para negócios em diferentes estágios de maturidade.
+        Sua missão é transformar ideias em projetos estruturados,
+        oferecendo orientação técnica e estratégica para empreendedores que estão iniciando sua jornada
         e ainda não possuem conhecimento sobre os primeiros passos para a criação e consolidação de um negócio.
+
+        Além de atuar na formação de novas startups,
+        a Auticius também presta suporte a empresas já consolidadas no mercado,
+        desenvolvendo soluções inovadoras, identificando oportunidades de crescimento, 
+        ,propondo novos modelos de negócio, produtos, serviços e estratégias que agreguem valor e fortaleçam sua competitividade.
+
+        Por meio de uma abordagem personalizada, a empresa busca estimular a inovação, 
+        acelerar o desenvolvimento empresarial e contribuir para a construção de negócios sustentáveis, 
+        competitivos e preparados para os desafios do mercado atual.
       </p>
 
       <div className="mt-20 grid md:grid-cols-3 gap-10 border-t hairline pt-16">
